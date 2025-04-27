@@ -15,6 +15,14 @@ const Experience: React.FC = () => {
         </ul>
       </div>
       <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
+        <h3 style={{ marginTop: '0', marginBottom: '5px', color: '#007bff' }}>Video editor</h3>
+        <p style={{ margin: '0 0 10px 0', fontStyle: 'italic' }}>Just Charge Media - March-2025</p>
+        <ul style={{ margin: '0', paddingLeft: '20px' }}>
+          <li>Video Editor</li>
+          <li>Content Writing</li>
+        </ul>
+      </div>
+      <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
         <h3 style={{ marginTop: '0', marginBottom: '5px', color: '#007bff' }}>Job Title / Role</h3>
         <p style={{ margin: '0 0 10px 0', fontStyle: 'italic' }}>Company Name - Dates</p>
         <ul style={{ margin: '0', paddingLeft: '20px' }}>
