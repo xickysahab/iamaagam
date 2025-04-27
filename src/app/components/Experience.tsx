@@ -9,8 +9,8 @@ const Experience: React.FC = () => {
         <h3 style={{ marginTop: '0', marginBottom: '5px', color: '#007bff' }}>AI Engineering Intern</h3>
         <p style={{ margin: '0 0 10px 0', fontStyle: 'italic' }}>Ojuss AI Research Lab Pvt Ltd - [Dates of Internship]</p>
         <ul style={{ margin: '0', paddingLeft: '20px' }}>
-          <li>[Responsibility 1]</li>
-          <li>[Responsibility 2]</li>
+          <li>Development</li>
+          <li>Social media</li>
           {/* Add more responsibilities */}
         </ul>
       </div>
