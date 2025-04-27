@@ -84,12 +84,13 @@ section:hover {
 
 /* Enhanced Hover Effects */
 #projects div[style*="padding: 20px"] { /* Target project cards */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 #projects div[style*="padding: 20px"]:hover {
-  transform: translateY(-5px);
+  transform: scale(1.03); /* Slightly scale up on hover */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #e0e0e0; /* Highlight color on hover */
 }
 
 #skills li { /* Target skill tags */
@@ -139,4 +140,33 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Rotating ring animation for PFP */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pfp-container {
+  position: relative;
+  width: 160px; /* Image width + padding for ring */
+  height: 160px; /* Image height + padding for ring */
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #007bff; /* Color of the rotating ring */
+  animation: rotate 2s linear infinite; /* Apply rotation animation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfp-container img {
+  border-radius: 50%;
+  animation: rotate 2s linear infinite reverse; /* Counter-rotate the image */
+  transform: rotate(70deg); /* Rotate the image by 70 degrees */
 }
