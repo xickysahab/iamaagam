@@ -22,14 +22,6 @@ const Experience: React.FC = () => {
           <li>Content Writing</li>
         </ul>
       </div>
-      <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
-        <h3 style={{ marginTop: '0', marginBottom: '5px', color: '#007bff' }}>Job Title / Role</h3>
-        <p style={{ margin: '0 0 10px 0', fontStyle: 'italic' }}>Company Name - Dates</p>
-        <ul style={{ margin: '0', paddingLeft: '20px' }}>
-          <li>Responsibility 1</li>
-          <li>Responsibility 2</li>
-        </ul>
-      </div>
     </section>
   );
 };
