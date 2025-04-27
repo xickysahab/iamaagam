@@ -1,4 +1,4 @@
-import React from 'react';
+chanimport React from 'react';
 
 const Experience: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
       {/* Add your work or internship experience here */}
       <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
         <h3 style={{ marginTop: '0', marginBottom: '5px', color: '#007bff' }}>AI Engineering Intern</h3>
-        <p style={{ margin: '0 0 10px 0', fontStyle: 'italic' }}>Ojuss AI Research Lab Pvt Ltd - [Dates of Internship]</p>
+        <p style={{ margin: '0 0 10px 0', fontStyle: 'italic', fontSize: '1.1em', fontWeight: 'bold' }}>Ojuss AI Research Lab Pvt Ltd - [April-2025]</p>
         <ul style={{ margin: '0', paddingLeft: '20px' }}>
           <li>Development</li>
           <li>Social media</li>
@@ -16,7 +16,7 @@ const Experience: React.FC = () => {
       </div>
       <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
         <h3 style={{ marginTop: '0', marginBottom: '5px', color: '#007bff' }}>Video editor</h3>
-        <p style={{ margin: '0 0 10px 0', fontStyle: 'italic' }}>Just Charge Media - March-2025</p>
+        <p style={{ margin: '0 0 10px 0', fontStyle: 'italic', fontSize: '1.1em', fontWeight: 'bold' }}>Just Charge Media - [March-2025]</p>
         <ul style={{ margin: '0', paddingLeft: '20px' }}>
           <li>Video Editor</li>
           <li>Content Writing</li>
