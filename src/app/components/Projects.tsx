@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
       {/* Add your project components or list here */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
         <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
-          <h3 style={{ marginTop: '0', marginBottom: '10px', color: '#007bff' }}>Project Title 1</h3>
+          <h3 style={{ marginTop: '0', marginBottom: '10px', color: '#007bff' }}><a href="https://iamaagam.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Website Developed</a></h3>
           <p style={{ margin: '0 0 10px 0' }}>Brief description of Project 1.</p>
           {/* Add links to project repo or demo */}
         </div>

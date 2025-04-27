@@ -1,4 +1,4 @@
-chanimport React from 'react';
+import React from 'react';
 
 const Experience: React.FC = () => {
   return (
