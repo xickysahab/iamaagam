@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Skills: React.FC = () => {
   return (
     <section id="skills" style={{ padding: '40px 20px' }}>
-      <h2 style={{ color: '#333', marginBottom: '20px' }}>Skills</h2>
+      <h2 style={{ color: '#ffffff', marginBottom: '20px' }}>Skills</h2>
       <ul style={{ listStyle: 'none', padding: '0', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         <li style={{ margin: '10px', padding: '10px 20px', backgroundColor: '#007bff', color: '#fff', borderRadius: '20px', fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
           <Image src="/premierepro.png" alt="Premiere Pro Logo" width={60} height={60} style={{ marginRight: '8px' }} /> {/* Approximate 2cm to pixels */}

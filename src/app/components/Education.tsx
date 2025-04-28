@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Education: React.FC = () => {
   return (
     <section id="education" style={{ padding: '40px 20px' }}>
-      <h2 style={{ color: '#333', marginBottom: '20px' }}>Education</h2>
+      <h2 style={{ color: '#ffffff', marginBottom: '20px' }}>Education</h2>
       <div style={{ marginBottom: '20px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px', display: 'flex', alignItems: 'center' }}>
         <Image src="/IIT madras.png" alt="IIT Madras Logo" width={50} height={50} style={{ marginRight: '15px', objectFit: 'contain' }} />
         <div>

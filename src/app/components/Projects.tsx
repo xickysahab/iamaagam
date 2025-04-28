@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Projects: React.FC = () => {
   return (
     <section id="projects" style={{ padding: '40px 20px' }}>
-      <h2 style={{ color: '#333', marginBottom: '20px' }}>Projects</h2>
+      <h2 style={{ color: '#ffffff', marginBottom: '20px' }}>Projects</h2>
       {/* Add your project components or list here */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
         <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
