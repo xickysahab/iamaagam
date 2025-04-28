@@ -180,3 +180,47 @@ footer p {
   color: var(--primary-color); /* Change color on hover */
   text-shadow: 0 0 8px rgba(170, 255, 0, 0.6); /* Add a subtle glow */
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  body {
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.8em;
+  }
+
+  main {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  section {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+
+  .pfp-container {
+    width: 120px;
+    height: 120px;
+  }
+}
