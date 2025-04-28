@@ -33,6 +33,7 @@ body {
   animation: gradientAnimation 15s ease infinite; /* Apply animation */
   transition: background-color 0.3s ease;
   min-height: 100vh; /* Ensure background covers the whole viewport */
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
