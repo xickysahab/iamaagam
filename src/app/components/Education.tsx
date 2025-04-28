@@ -17,7 +17,7 @@ const Education: React.FC = () => {
         <Image src="/Bvm logo.jpg" alt="Bhai Parmanad Vidya Mandir Logo" width={50} height={50} style={{ marginRight: '15px', objectFit: 'contain' }} />
         <div>
           <h3 style={{ marginTop: '0', marginBottom: '5px', color: 'var(--primary-color)' }}>Bhai Parmanad Vidya Mandir</h3>
-          <p style={{ margin: '0 0 10px 0', fontStyle: 'italic' }}>Completed Schooling from Science Side</p>
+          <p style={{ margin: '0 0 10px 0', fontStyle: 'italic' }}>Completed Schooling from Science Background</p>
           {/* Add degree, dates, relevant coursework, etc. */}
         </div>
       </div>
