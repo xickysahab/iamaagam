@@ -199,7 +199,7 @@ footer p {
 
   main {
     margin: 20px auto;
-    padding: 0 10px;
+    padding: 0 15px; /* Slightly increased padding for better spacing */
   }
 
   section {
@@ -208,19 +208,27 @@ footer p {
   }
 
   header {
-    padding: 20px 10px;
+    padding: 30px 15px; /* Adjusted padding */
+  }
+
+  header h1 {
+    font-size: 2.2em; /* Slightly larger heading on mobile */
   }
 
   header p {
-    font-size: 1em;
+    font-size: 1.1em; /* Slightly larger font */
   }
 
   footer {
-    margin-top: 30px;
+    margin-top: 40px; /* Adjusted margin */
+    padding: 20px 15px; /* Added padding to footer */
   }
 
   .pfp-container {
     width: 120px;
     height: 120px;
   }
+
+  /* Further potential mobile specific adjustments can be added here */
+  /* For example, adjusting layout for specific components if needed */
 }
