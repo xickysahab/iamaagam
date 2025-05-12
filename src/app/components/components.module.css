@@ -1,0 +1,210 @@
+.header {
+  padding: 40px 20px;
+  background-color: #000000;
+  color: #ecf0f1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfpContainer {
+  margin-right: 20px;
+}
+
+.pfpImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  margin: 0 0 10px 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5em;
+  color: #bdc3c7;
+}
+
+.aboutSection {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.aboutHeading {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.aboutText {
+  font-size: 1.1em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.educationSection {
+  padding: 40px 20px;
+}
+
+.educationHeading {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.educationEntry {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.educationLogo {
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.educationDegree {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.educationInstitution {
+  margin: 0 0 10px 0;
+  font-style: italic;
+}
+
+.experienceSection {
+  padding: 40px 20px;
+}
+
+.experienceHeading {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.experienceEntry {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.experienceHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.experienceLogo {
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.experienceTitle {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #aaff00;
+}
+
+.experienceCompany {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.experienceResponsibilities {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.skillsSection {
+  padding: 40px 20px;
+}
+
+.skillsHeading {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skillItem {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.skillLogo {
+  margin-right: 8px;
+}
+
+.projectsSection {
+  padding: 40px 20px;
+}
+
+.projectsHeading {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projectCard {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.projectTitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.projectLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.projectImage {
+  border-radius: 8px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.footerSection {
+  padding: 20px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footerText {
+  margin: 0;
+  font-size: 1em;
+}

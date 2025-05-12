@@ -13,29 +13,36 @@ import { Fade } from 'react-awesome-reveal';
 
 const Home: React.FC = () => {
   useEffect(() => {
+    const parallaxSections = document.querySelectorAll('.parallax-section');
+    let animationFrameId: number | null = null;
+
     const handleScroll = () => {
-      const parallaxSections = document.querySelectorAll('.parallax-section');
-      parallaxSections.forEach(section => {
-        const background = section.querySelector('.parallax-background');
-        if (background) {
-          const scrollPosition = window.scrollY;
-          const sectionTop = (section as HTMLElement).getBoundingClientRect().top + scrollPosition;
-          const sectionHeight = (section as HTMLElement).offsetHeight;
-          const viewportHeight = window.innerHeight;
+      if (animationFrameId === null) {
+        animationFrameId = requestAnimationFrame(() => {
+          parallaxSections.forEach(section => {
+            const background = section.querySelector('.parallax-background');
+            if (background) {
+              const scrollPosition = window.scrollY;
+              const sectionTop = (section as HTMLElement).getBoundingClientRect().top + scrollPosition;
+              const sectionHeight = (section as HTMLElement).offsetHeight;
+              const viewportHeight = window.innerHeight;
 
-          // Calculate how much of the section is visible in the viewport
-          const visibleHeight = Math.max(0, Math.min(sectionHeight, viewportHeight - (sectionTop - scrollPosition), sectionTop + sectionHeight - scrollPosition));
+              // Calculate how much of the section is visible in the viewport
+              const visibleHeight = Math.max(0, Math.min(sectionHeight, viewportHeight - (sectionTop - scrollPosition), sectionTop + sectionHeight - scrollPosition));
 
-          // Calculate the scroll progress within the visible part of the section
-          const scrollProgress = (scrollPosition - (sectionTop - viewportHeight)) / (sectionHeight + viewportHeight);
+              // Calculate the scroll progress within the visible part of the section
+              const scrollProgress = (scrollPosition - (sectionTop - viewportHeight)) / (sectionHeight + viewportHeight);
 
-          // Adjust the parallax speed (0.5 means half the scroll speed)
-          const parallaxSpeed = 0.3;
-          const translateY = (scrollProgress - 0.5) * sectionHeight * parallaxSpeed;
+              // Adjust the parallax speed (0.5 means half the scroll speed)
+              const parallaxSpeed = 0.3;
+              const translateY = (scrollProgress - 0.5) * sectionHeight * parallaxSpeed;
 
-          (background as HTMLElement).style.transform = `translateY(${translateY}px)`;
-        }
-      });
+              (background as HTMLElement).style.transform = `translateY(${translateY}px)`;
+            }
+          });
+          animationFrameId = null;
+        });
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -43,6 +50,9 @@ const Home: React.FC = () => {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      if (animationFrameId !== null) {
+        cancelAnimationFrame(animationFrameId);
+      }
     };
   }, []);
 
